@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+  }
+
+
+
+  .services-image1 {
+	width: 250px;
+	height: 150px;
+}
+ /* Aplica un margen a todas las imágenes, excepto a la última */
+ .services-image {
+	margin-right: 20px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Elimina el margen de la última imagen */
+.services-image:last-child {
+	margin-right: 0;
+}
+  
+  .menu {
+    
+	align-items: baseline;
+	display: flex;
+	padding: -5px;
+  /* Otras opciones adicionales */
+   border-radius: 50px; /* Para bordes redondeados */
+  }
+
+  p11{
+	text-align: justify;
+	font-size: 15px;
+	position: relative;
+    top: 12px;
+	margin-top: 10px;
+	color:black;
+  }
+  p15{
+	font-weight: bold;
+	text-align: left;
+	font-size: 18px;
+	position: relative;
+    top: 12px;
+	margin-top: 10px;
+	color:black;
+  }
+  p14{
+	font-weight: bold;
+	text-align: justify;
+	font-size: 16px;
+	position: relative;
+    top: 12px;
+	margin-top: 10px;
+	color:black;
+  }
+  
+  p10{
+	font-weight: bold;
+	font-size: 17px;
+	position: relative;
+    top: 12px;
+	margin-top: 10px;
+	color:black;
+  }
+  p110{
+	font-weight: bold;
+	font-size: 17px;
+	position: relative;
+    top: 12px;
+	margin-top: 10px;
+	color: #151515;
+	;
+  }
+  .menu p {
+	font-size: 13px;
+	text-align: center;
+	margin-right: 1.02rem;
+	cursor: pointer;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  .contenido-item {
+	display: none;
+  }
+  .menu p.active {
+	color: #007bff; /* Cambia el color del texto del menú cuando está activo */
+	font-weight: bold; /* Agrega negrita al texto del menú cuando está activo */
+  }
+  
+  .contenido-item.active {
+	/* Agrega estilos adicionales para resaltar el contenido activo */
+	background-color: #e6f7ff; /* Cambia el color de fondo del contenido activo */
+	border: 1px solid #007bff; /* Agrega un borde al contenido activo */
+  }
+  .menu p:hover {
+	color: rgb(0, 157, 255);;
+  }
+  
+  .content {
+	margin-top: 2rem;
+  }
+  
+  [data-content] {
+	display: none;
+  }
+  
+  .active[data-content] {
+	display: block;
+	margin-top: 1rem;
+  }
+  
+  /* Estilos para los títulos dentro del contenido */
+  [data-content] h1 {
+	color: #333;
+	margin-bottom: 0.5rem;
+  }
+  
+  [data-content] p {
+	color: #555;
+	line-height: 1.5;
+  }
+  
+  /* Estilos específicos para pantallas medianas */
+  @media only screen and (max-width: 768px) {
+	.menu {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.menu p {
+	  margin-right: 0;
+	  margin-bottom: 1rem;
+	}
+  
+	[data-content] {
+	  display: none;
+	}
+  
+	.active[data-content] {
+	  display: block;
+	}
+  }
+  

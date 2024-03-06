@@ -1,0 +1,78 @@
+#tabs-4-2 .menu-tabs {
+    width: 100%; /* Ancho máximo fijo de 1000px y espacio extra de 200px */
+    position: relative;
+    left: 0; /* Restaura la posición en pantallas más pequeñas */
+    border-radius: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
+@media screen and (min-width: 768px) {
+    #tabs-4-2 .menu-tabs {
+		
+        width: calc(80% + 300px); /* Ancho máximo fijo de 1000px y espacio extra de 200px */
+        left: -140px; /* Restaura la posición en pantallas más pequeñas */
+    }
+}
+
+#tabs-4-2 .menu-tabs li {
+    margin: px 0px; /* Agrega un margen entre los elementos del menú */
+}
+
+#tabs-4-2 .menu-tabs li a {	
+	margin-left: 20px;
+	position: relative;
+	line-height: 1.5;
+	font-size: 13px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px; /* Aumenta el padding para un toque más responsivo */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#tabs-4-2 .menu-tabs li a:hover {
+    background-color: #555;
+}
+
+#tabs-4-2 .contenido-tabs {
+	width: 1000px;
+	position: relative;
+	right: 140px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tabs-4-2 .contenido-tabs h2 {
+    color: #333;
+}
+
+#tabs-4-2 .contenido-tabs p {
+	text-align: center;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #tabs-4-2 .menu-tabs {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos verticalmente */
+        left: 0px; /* Restaura el valor de la propiedad left */
+    }
+
+    #tabs-4-2 .menu-tabs li {
+        margin: 10px 0; /* Ajusta el margen para los elementos en columna */
+    }
+	
+}

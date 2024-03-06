@@ -1,0 +1,106 @@
+
+
+
+
+
+
+@media only screen and (min-width: 766px) and (max-width: 991px) {
+	.slideInDown{
+		color: black;
+    position: relative;
+    font-size: 50px;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+	
+	}
+}
+
+
+@media only screen and (min-width: 390px) and (max-width: 766px) {
+	.slideInDown{
+		color: black;
+    position: relative;
+    left: -0px;
+    font-size: 40px;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+	
+	}
+}
+
+@media only screen and (min-width: 575px) and (max-width: 575px) {
+	.slideInDown{
+		color: black;
+    position: relative;
+    left: -0px;
+    font-size: 40px;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+	
+	}
+}
+
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+	.slideInDown{
+		color: black;
+    position: relative;
+    left: -0px;
+    font-size: 60px;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+	
+	}
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+.material-parallax img {
+  display: none;
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+  min-width: 101%;
+  min-height: 101%;
+  max-width: none;
+  transform: translate3d(-50%, 0, 0);}}
+
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .material-parallax img {
+      display: none;
+      position: absolute;
+      left: 80%;
+      bottom: 0;
+      min-width: 101%;
+      min-height: 101%;
+      max-width: none;
+      transform: translate3d(-50%, 0, 0);}}
+
+
+
+
+      @media only screen and (min-width: 767px) and (max-width: 992px) {
+        .material-parallax img {
+          display: none;
+          position: absolute;
+          left: 95%;
+          bottom: 0;
+          min-width: 101%;
+          min-height: 101%;
+          max-width: none;
+          transform: translate3d(-50%, 0, 0);}}
+
+
+
+          
+      @media only screen and (min-width: 575px) and (max-width: 767px) {
+        .material-parallax img {
+          display: none;
+          position: absolute;
+          left: 120%;
+          bottom: 0;
+          min-width: 101%;
+          min-height: 101%;
+          max-width: none;
+          transform: translate3d(-50%, 0, 0);}}

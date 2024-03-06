@@ -1,0 +1,126 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 800px;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.popup-content header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.popup-content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.popup-content .field input {
+    width: calc(100% - 30px);
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    outline: none;
+    font-size: 17px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.popup-content .field input:focus {
+    border-color: rgb(142, 197, 252);
+}
+
+.popup-content .btn {
+    height: 47px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.popup-content .btn .layer {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: linear-gradient(136deg, rgb(224, 195, 252) 0%, rgb(142, 197, 252) 100%);
+    transition: all 0.4s ease;
+}
+
+.popup-content .btn:hover .layer {
+    left: 0;
+}
+
+.popup-content .btn button {
+    z-index: 1;
+    position: relative;
+    background: none;
+    padding: 0;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.popup-content .text {
+    margin-top: 5px;
+}
+
+.alert {
+    margin: -9px 0 12px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success-alert {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.error-alert {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
